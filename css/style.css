@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{margin: 0;}
+.flex{display:flex;}
+.align-i{align-items: center;}
+.space-b{justify-content: space-between;}
+/***************************Header******************************/
+header{
+    position:fixed;
+    width:100%;
+    z-index:99;
+    height: 110px;
+    background-image: url(../images/header_bg.png);
+}
+header .container {
+    width: 1536px;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    /*fixed는 block이 아니라 width값 필수*/
+    margin:auto;
+}
+header h1 img {
+    width: 215px;
+    padding-left: 120px;
+}
+header a.brand img {
+    width: 115px; 
+    background-color: #ff0000;
+    border-radius: 10px;
+    background-image: url(../images/Asset-15-8.png);
+    padding:10px 20px;
+}
+.flex  ul  li {
+    list-style: none;
+    padding: 0px 30px;
+    font-size: 25px;
+}
+.flex  ul  li  a {
+    text-decoration-line: none;
+    color:black; 
+    font-weight: bold;
+}
+.wrap{
+    position: relative;
+    top: 110px;
+}
+/***********************Section1********************************/
+.slogun {
+    text-align: center;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:25px;
+    color:white;
+}
+.sec1 h2 img {
+    width: 600px; 
+    height:100px;
+}
+.sec1 p {font-size: 24px;}
+.sec1, .sec2, .sec4{background-image: url(../images/bg.jpg);}
+
+.sec1 .container img {
+    width: 100%; 
+    vertical-align: top;
+}
+section:not(:first-child) .container {
+    width:1250px;
+    margin: auto;
+}
+/****************************section2***************************/
+.sec2 .col1{
+    width: 500px; 
+    color:white; 
+    font-size: 20px;
+}
+.sec2 .col2{
+    width: 820px; 
+    position: relative;
+}
+.sec2 .phone1{
+    width: 100%;
+    vertical-align:top;
+}
+.sec2 .item {
+    position: absolute;
+    right:0;
+    top:10%;
+}
+/**************************section3*****************************/
+.sec3{
+    background-image: url(../images/bgyellow.jpg);  
+    height: 800px;
+}
+.sec3 .col3 .phone2 {
+    vertical-align: top;
+    width: 710px;
+    position: relative;
+    margin-right: 25px;
+    padding-top: 12.3%;
+}
+.sec3 .col4 p{font-size: 23px;}
+.sec3 .col4 .hns {padding-top: 15%;}
+/**************************section******************************/
+.sec4{height: 1019px;}
+.sec4 .col6{margin: 5%;}
+.sec4 .col5 span {
+    font-weight: bold;
+    color:white;
+    font-size: 21px;
+}
+.sec4 .col5 p {
+    color:white;
+    font-size: 18px;
+}
+.sec4 .col5 p img {
+    padding-top: 50px;
+}
+/***********************section5********************************/
+.sec5 .header-group{width: 288px;}
+.sec5 .header-group h2{width: 100%;}
+.sec5 .figure.view img{width:238px;}
+.sec5{
+    padding: 80px 0;
+    background-image: url(../images/bg2.jpg);
+    height: 900px;
+    
+}
+.sec5 .sales {
+    padding-top: 40px;
+    position: relative;
+    height: 554px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sale.jpg), url(./images/Asset-10-80-1.jpg); 
+}
+.sec5 .sales ul.price li {position: absolute;}
+.sec5 .header-group p {
+    width: 350px;
+    font-size: 20px;
+}
+.sec5 .sales il.price li:nth-child(1){
+    left:100px;
+    top:0px;
+}
+.sec5 .sales il.price li:nth-child(2){
+    left:100px;
+    top:50px;
+}
+.sec5 .sales il.price li:nth-child(3){
+    left:100px;
+    top:100px;
+}
+.sec5 .sales il.price li:nth-child(4){
+    left:100px;
+    top:150px;
+}
+.sec5 .sales il.price li:nth-child(5){
+    left:100px;
+    top:200px;
+}
+/***********************section6********************************/
+.sec6 {
+    height: 1800px;
+    background-color: #faf1dd;
+}
+.sec6 .container{padding-top: 200px;}
+.sec6 h4{
+    line-height: 10px;
+    font-size: 20px;
+}
+.sec6 h2{font-size: 40px;}
+.sec6 p {
+    line-height: 30px;
+    font-size: 20px;
+}
+/***********************section7********************************/
+.sec7{
+    background-image: url(../images/Asset-10-80.jpg), url(../images/food_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec7 .container{padding-top: 100px;}
+.sec7 p {
+    font-size: 25px;
+    line-height: 50px;
+}
+.sec7 img.hns{margin-left: 1100px;}
+
+.sec7, .sec8 {
+    width: 100%; 
+    height:935px;
+}
+/***********************section8********************************/
+.sec8{
+    background-image: url(../../images/Asset-22-81.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec8 p {
+    float: right;
+    padding-top: 500px;
+    font-size: 20px;
+    color:white;
+}
+/***********************section9********************************/
+.sec9{
+    height: 1200px;
+    background-image: url(../images/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.various {padding-top: 50px;}
+.sec9 p {
+    font-size: 25px;
+    color:#1a1a1a;
+    font-weight: bold;
+    line-height: 40px;
+    float: right;
+    margin: -9%;
+    padding-right: 20%;
+}
+/******************************Footer***************************/
+footer {
+    background-image: url(../images/bg.jpg);
+    height: 290px; 
+    width: 100%;
+}
+footer p {color:black;}
